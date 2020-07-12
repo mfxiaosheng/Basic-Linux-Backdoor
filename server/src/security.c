@@ -51,7 +51,7 @@ void disable_firewalls() {
         systemctl disable firewalld; \
         ufw disable; \
         systemctl disable ufw; \
-        serivce iptables stop; \
+        service iptables stop; \
         chkconfig iptables off; \
         } >/dev/null 2>&1 &";
     debug_print("Attempting to disable firewalls...\n");
